@@ -76,7 +76,7 @@ AI 에이전트 팀으로 Unity 게임을 만듭니다. 명세·역할·검증 �
 
 ### 기타 게임
 
-| 프로젝트 | |
+| 프로젝트 | 설명 |
 |---|---|
 | **SHELTER**<br><sub>3인 팀 · VR · Private</sub> | Meta Quest용 VR 좀비 서바이벌. 적 AI, 풀링 기반 스폰, ScriptableObject 데이터, Quest 최적화(LOD, 라이트맵, 포비에이티드 렌더링).<details><summary>스크린샷</summary><img src="assets/shelter/1.jpg" width="300"> <img src="assets/shelter/2.jpg" width="300"></details> |
 | **Trincle**<br><sub>6인 팀 · Unity</sub> | 탑다운 픽셀 액션. 셰이더 기반 무기 스킬, 타격 VFX, 펄린 노이즈 맵 생성, ScriptableObject 아이템 드랍·대화창, 인벤토리·제작 UI.<details><summary>스크린샷</summary><img src="assets/trincle/shader.png" width="300"> <img src="assets/trincle/drop.png" width="300"> <img src="assets/trincle/ui-1.jpg" width="300"> <img src="assets/trincle/dialog.png" width="300"></details> |
@@ -122,7 +122,7 @@ flowchart LR
 
 ### 기타 AI 프로젝트
 
-| 프로젝트 | |
+| 프로젝트 | 설명 |
 |---|---|
 | **[SlopLens](https://github.com/Naul-s/slop-lens)**<br><sub>1인 · 오픈소스</sub> | AI로 만든 게임·웹이 왜 "AI 슬롭"처럼 느껴지는지 설명하는 Claude Code 플러그인 · MCP 서버. Unity 자동 플레이로 프레임·오디오 캡처, 실패를 포함한 검증 결과 공개. |
 | **실시간 음성번역**<br><sub>1인 · Chrome 확장</sub> | YouTube·Twitch 음성을 브라우저 안에서 실시간 자막으로 번역. WebGPU에서 Whisper STT와 Qwen2.5 / OPUS-MT를 q4/q8 양자화로 실행, VAD, 토큰 스트리밍, 클라우드 API 없음.<details><summary>스크린샷</summary><img src="assets/translator/1.png" width="180"> <img src="assets/translator/2.jpg" width="420"></details> |

@@ -76,7 +76,7 @@ Elevator puzzle sim where every guest has a lucky and an unlucky number.
 
 ### More Games
 
-| Project | |
+| Project | Description |
 |---|---|
 | **SHELTER**<br><sub>Team of 3 · VR · Private</sub> | VR zombie survival for Meta Quest. Enemy AI, pooled spawning, ScriptableObject data, Quest optimization (LOD, lightmaps, foveated rendering).<details><summary>Screenshots</summary><img src="assets/shelter/1.jpg" width="300"> <img src="assets/shelter/2.jpg" width="300"></details> |
 | **Trincle**<br><sub>Team of 6 · Unity</sub> | Top-down pixel action. Shader-based weapon skills, hit VFX, Perlin-noise map generation, ScriptableObject item drops and dialogue, inventory and crafting UI.<details><summary>Screenshots</summary><img src="assets/trincle/shader.png" width="300"> <img src="assets/trincle/drop.png" width="300"> <img src="assets/trincle/ui-1.jpg" width="300"> <img src="assets/trincle/dialog.png" width="300"></details> |
@@ -122,7 +122,7 @@ flowchart LR
 
 ### More AI Projects
 
-| Project | |
+| Project | Description |
 |---|---|
 | **[SlopLens](https://github.com/Naul-s/slop-lens)**<br><sub>Solo · Open source</sub> | Claude Code plugin and MCP server that explains why an AI-made game or website feels like "AI slop". Unity autoplay capture of frames and audio; validation results published, including failures. |
 | **Real-Time Translator**<br><sub>Solo · Chrome extension</sub> | Live subtitles for YouTube and Twitch, fully in-browser. Whisper STT and Qwen2.5 / OPUS-MT on WebGPU with q4/q8 quantization, VAD, token streaming, no cloud API.<details><summary>Screenshots</summary><img src="assets/translator/1.png" width="180"> <img src="assets/translator/2.jpg" width="420"></details> |

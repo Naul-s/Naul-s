@@ -87,35 +87,44 @@ Elevator puzzle sim where every guest has a lucky and an unlucky number.
 
 ## AI Projects
 
-### Multi-Agent Development Workflow
+### AI Development Workflow
 
-<sub>Personal architecture · Applied across the games above</sub>
+<sub>How my agent workflow grew · 2026.08 → 2026.11</sub>
 
-Single agents drifted out of scope, guessed at unstated requirements, and missed their own bugs. I split the work across role agents with explicit approval gates.
+I started with a fixed pipeline of process roles. After running it on real projects, I rebuilt it around module ownership and automated checks.
 
-- **Roles:** Coordinator, Planner, Plan Reviewer, Builder, Code Reviewer, Reporter. Reviewers never edit.
-- **Risk tiers:** T0 / T1 / T2. Plan review and a second approval only for risky work.
-- **Decision states:** Confirmed / Candidate / Open Gate, so a guess never becomes a requirement.
-- **Handoffs:** objective, approvals, and constraints instead of full logs.
+| | Then · Fixed pipeline | Now · Orchestrated team |
+|---|---|---|
+| **Structure** | 6 roles in a serial chain: plan → review → build → review → report | Orchestrator plus 8 domain agents (gameplay, render, UI, audio, content, assets, QA, release) |
+| **Parallelism** | One task at a time | Up to 3 writing agents at once, each in its own Git worktree |
+| **Conflicts** | Allowed-file list per task | Directory ownership enforced by hooks; shared contracts fixed first and changed only by the orchestrator |
+| **"Done" means** | A reviewer agent returns PASS | Automated checks pass: L0 compile (4s) → L1 tests → L2 runtime screen capture → L3 WebGL build |
+| **Integration** | Manual | Trial merge + compile; on failure develop is untouched and the work goes back to its agent |
+| **Human role** | Approve each plan, sometimes twice | Set contracts and direction, approve assets and pushes, judge game feel |
+| **Used on** | Snow Removal Master, Project SR | Floor F: playable WebGL game in one week, 860 test cases |
+
+**Kept from the first version:** human approval for decisions, evidence over claims, short fixed-format briefs and reports instead of full logs.
 
 <details>
-<summary>Workflow and evolution</summary>
+<summary>Current pipeline and timeline</summary>
 
 ```mermaid
 flowchart LR
-    U[Request] --> C[Coordinator]
-    C -->|T0| A0([Approve]) --> B0[Builder] --> R0[Reporter]
-    C -->|T1| A1([Approve]) --> P1[Planner] --> B1[Builder] --> R1[Reporter]
-    C -->|T2| A2([Approve]) --> P2[Planner] --> PR[Plan Reviewer] --> A3([2nd Approve]) --> B2[Builder] --> CR[Code Reviewer] --> R2[Reporter]
+    O[Orchestrator] -- brief --> A1[gameplay-dev]
+    O -- brief --> A2[render-dev]
+    O -- brief --> A3[ui-dev]
+    A1 & A2 & A3 -- report --> I{Trial merge<br/>+ L0 compile}
+    I -- pass --> D[(develop)]
+    I -- fail --> O
 ```
 
 ```
 2025      Game dev fundamentals without agents
 2026.04   Rule files and Unity MCP as assistants
-2026.08   Fixed roles (plan → build → review) with a task ledger
+2026.08   Fixed role pipeline with a task ledger
 2026.09   Contract- and test-first development; dropped the fixed roles
 2026.10   Risk-based routing, dynamic orchestration, evidence gates
-2026.11   Parallel agent team ships a game in a week; built an AI-output QA tool
+2026.11   Orchestrated parallel team ships a game in a week; built an AI-output QA tool
 ```
 
 </details>

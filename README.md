@@ -16,8 +16,8 @@ I build Unity games with AI agent teams: I design the specs, roles, and verifica
 
 | | |
 |---|---|
-| **Game** | ![Unity](https://img.shields.io/badge/Unity_6-222c37?style=flat-square&logo=unity&logoColor=white) ![C#](https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=dotnet&logoColor=white) ![URP](https://img.shields.io/badge/URP-222c37?style=flat-square&logo=unity&logoColor=white) ![Photon](https://img.shields.io/badge/Photon_Fusion_2-004480?style=flat-square) ![FMOD](https://img.shields.io/badge/FMOD-000000?style=flat-square) ![OpenXR](https://img.shields.io/badge/OpenXR_·_Quest-1C1E20?style=flat-square&logo=meta&logoColor=white) ![PlayFab](https://img.shields.io/badge/PlayFab-F26522?style=flat-square) |
-| **AI** | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=claude&logoColor=white) ![Codex](https://img.shields.io/badge/Codex-412991?style=flat-square&logo=openai&logoColor=white) ![MCP](https://img.shields.io/badge/MCP-000000?style=flat-square) ![Transformers.js](https://img.shields.io/badge/Transformers.js-FFD21E?style=flat-square&logo=huggingface&logoColor=black) ![WebGPU](https://img.shields.io/badge/WebGPU-005A9C?style=flat-square) |
+| **Game** | ![Unity](https://img.shields.io/badge/Unity_6-222c37?style=flat-square&logo=unity&logoColor=white) ![C#](https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=dotnet&logoColor=white) ![URP](https://img.shields.io/badge/URP-222c37?style=flat-square&logo=unity&logoColor=white) ![Photon](https://img.shields.io/badge/Photon_Fusion_2-004480?style=flat-square) ![FMOD](https://img.shields.io/badge/FMOD-000000?style=flat-square) ![OpenXR](https://img.shields.io/badge/OpenXR_·_Quest-1C1E20?style=flat-square&logo=meta&logoColor=white) ![PlayFab](https://img.shields.io/badge/PlayFab-F26522?style=flat-square) ![Unreal Engine 5](https://img.shields.io/badge/Unreal_Engine_5-0E1128?style=flat-square&logo=unrealengine&logoColor=white) ![Blender](https://img.shields.io/badge/Blender-E87D0D?style=flat-square&logo=blender&logoColor=white) |
+| **AI** | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=claude&logoColor=white) ![Codex](https://img.shields.io/badge/Codex-412991?style=flat-square&logo=openai&logoColor=white) ![MCP](https://img.shields.io/badge/MCP-000000?style=flat-square) ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white) ![Transformers.js](https://img.shields.io/badge/Transformers.js-FFD21E?style=flat-square&logo=huggingface&logoColor=black) ![WebGPU](https://img.shields.io/badge/WebGPU-005A9C?style=flat-square) |
 | **Web / Tools** | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) |
 
 ---
@@ -27,6 +27,8 @@ I build Unity games with AI agent teams: I design the specs, roles, and verifica
 ### [Floor F](https://github.com/Naul-s/Floor-F) — Solo · Official 2026 Unity Game Jam
 
 Elevator puzzle sim where every guest has a lucky and an unlucky number. Built in one week by directing an 8-agent team.
+
+<img src="assets/floor-f.gif" alt="Floor F gameplay" width="100%">
 
 - **Game:** Unity 6 · URP · WebGL. Engine-free C# rule core, assemblies split by Gameplay / Rendering / UI / Audio, 640×360 pixelated render pipeline, 10 nights, 6 endings, EN/KO
 - **AI-native:** 8 role agents in isolated Git worktrees, directory ownership enforced by hooks, contract changes reserved to the orchestrator
@@ -70,7 +72,7 @@ Claude Code plugin and MCP server that explains why an AI-made game or website f
 | **[Snow Removal Master](https://snow-removal-master.vercel.app)** | Web 3D puzzle · Solo | React · Three.js · Rapier · procedural Endless mode and stage editor · 42 tasks each tracked as brief → report → independent review |
 | **Local Real-Time Translator** | Chrome extension · On-device AI | Whisper + Qwen2.5 / OPUS-MT on WebGPU, AudioWorklet VAD, token-streamed subtitles, zero API calls |
 | **UniTrio Game 2026** | Action game · Team of 3 | Charged skills, elemental debuffs, inventory, crafting, monster AI, audio manager, frost aura shader |
-| **Rhythm Game (2025)** | Rhythm game · Online versus | Photon PUN versus mode, PlayFab login and leaderboard, chart editor · exhibited at G-STAR 2025 |
+| **Rhythm Game (2025)** | Rhythm game · Online versus | Photon PUN versus mode, PlayFab login and leaderboard, chart editor |
 
 ---
 
@@ -86,7 +88,7 @@ Claude Code plugin and MCP server that explains why an AI-made game or website f
 | **Iterate the harness** | Ran a fixed multi-agent system, found its limits, replaced it with risk-based dynamic orchestration |
 
 ```
-2025      Game dev fundamentals without agents — rhythm game exhibited at G-STAR
+2025      Game dev fundamentals without agents
 2026.04   Rule files and Unity MCP as assistants
 2026.08   Fixed roles (plan → build → review) with a task ledger
 2026.09   Contract- and test-first development; dropped the fixed MAS
@@ -100,11 +102,7 @@ Claude Code plugin and MCP server that explains why an AI-made game or website f
 
 | Date | |
 |---|---|
-| 2026.11 | Official 2026 Unity Game Jam — *Floor F* |
-| 2026.07 | Programming teaching assistant, high school |
 | 2025.12 | Jeonju Youth IP Hackathon — **Gold Prize** (AI vision assistive device for the visually impaired) |
-| 2025.11 | G-STAR 2025 — Exhibited rhythm game |
-| 2025.10 | Namwon Drone Festival — Exhibited rhythm game |
-| 2025.06 | Craftsman Programming certification |
+| 2025.06 | Craftsman Information Processing (정보처리기능사) |
 | 2025.04 – | Co-founder & president, school game development club · taught C# and Unity |
 | 2024.04 | Regional Skills Competition — **Silver Medal** |

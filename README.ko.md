@@ -16,8 +16,8 @@ AI 에이전트 팀으로 Unity 게임을 만듭니다. 명세·역할·검증 �
 
 | | |
 |---|---|
-| **Game** | ![Unity](https://img.shields.io/badge/Unity_6-222c37?style=flat-square&logo=unity&logoColor=white) ![C#](https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=dotnet&logoColor=white) ![URP](https://img.shields.io/badge/URP-222c37?style=flat-square&logo=unity&logoColor=white) ![Photon](https://img.shields.io/badge/Photon_Fusion_2-004480?style=flat-square) ![FMOD](https://img.shields.io/badge/FMOD-000000?style=flat-square) ![OpenXR](https://img.shields.io/badge/OpenXR_·_Quest-1C1E20?style=flat-square&logo=meta&logoColor=white) ![PlayFab](https://img.shields.io/badge/PlayFab-F26522?style=flat-square) |
-| **AI** | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=claude&logoColor=white) ![Codex](https://img.shields.io/badge/Codex-412991?style=flat-square&logo=openai&logoColor=white) ![MCP](https://img.shields.io/badge/MCP-000000?style=flat-square) ![Transformers.js](https://img.shields.io/badge/Transformers.js-FFD21E?style=flat-square&logo=huggingface&logoColor=black) ![WebGPU](https://img.shields.io/badge/WebGPU-005A9C?style=flat-square) |
+| **Game** | ![Unity](https://img.shields.io/badge/Unity_6-222c37?style=flat-square&logo=unity&logoColor=white) ![C#](https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=dotnet&logoColor=white) ![URP](https://img.shields.io/badge/URP-222c37?style=flat-square&logo=unity&logoColor=white) ![Photon](https://img.shields.io/badge/Photon_Fusion_2-004480?style=flat-square) ![FMOD](https://img.shields.io/badge/FMOD-000000?style=flat-square) ![OpenXR](https://img.shields.io/badge/OpenXR_·_Quest-1C1E20?style=flat-square&logo=meta&logoColor=white) ![PlayFab](https://img.shields.io/badge/PlayFab-F26522?style=flat-square) ![Unreal Engine 5](https://img.shields.io/badge/Unreal_Engine_5-0E1128?style=flat-square&logo=unrealengine&logoColor=white) ![Blender](https://img.shields.io/badge/Blender-E87D0D?style=flat-square&logo=blender&logoColor=white) |
+| **AI** | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=claude&logoColor=white) ![Codex](https://img.shields.io/badge/Codex-412991?style=flat-square&logo=openai&logoColor=white) ![MCP](https://img.shields.io/badge/MCP-000000?style=flat-square) ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white) ![Transformers.js](https://img.shields.io/badge/Transformers.js-FFD21E?style=flat-square&logo=huggingface&logoColor=black) ![WebGPU](https://img.shields.io/badge/WebGPU-005A9C?style=flat-square) |
 | **Web / Tools** | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) |
 
 ---
@@ -27,6 +27,8 @@ AI 에이전트 팀으로 Unity 게임을 만듭니다. 명세·역할·검증 �
 ### [Floor F](https://github.com/Naul-s/Floor-F) — 1인 · Official 2026 Unity Game Jam
 
 손님마다 다른 행운·불운의 숫자를 읽으며 운전하는 엘리베이터 퍼즐 시뮬레이션. 에이전트 8종을 지휘해 1주 만에 완성.
+
+<img src="assets/floor-f.gif" alt="Floor F 플레이 화면" width="100%">
 
 - **게임:** Unity 6 · URP · WebGL. 엔진 비의존 C# 규칙 코어, Gameplay / Rendering / UI / Audio 어셈블리 분리, 640×360 픽셀화 렌더 파이프라인, 10일차 · 엔딩 6종, 한/영 지원
 - **AI Native:** 역할별 에이전트 8종을 Git worktree로 격리, 디렉터리 소유권을 훅으로 강제, 공유 계약 변경은 오케스트레이터만 수행
@@ -70,7 +72,7 @@ AI로 만든 게임·웹이 왜 "AI 슬롭"처럼 느껴지는지 근거와 수�
 | **[Snow Removal Master](https://snow-removal-master.vercel.app)** | 웹 3D 퍼즐 · 1인 | React · Three.js · Rapier · 절차 생성 Endless 모드, 스테이지 에디터 · 작업 42건 전부 지시 → 보고 → 독립 리뷰로 추적 |
 | **Local Real-Time Translator** | Chrome 확장 · 온디바이스 AI | WebGPU에서 Whisper + Qwen2.5 / OPUS-MT 실행, AudioWorklet VAD, 토큰 스트리밍 자막, API 호출 0건 |
 | **UniTrio Game 2026** | 액션 게임 · 3인 팀 | 차지 스킬, 속성 디버프, 인벤토리, 제작, 몬스터 AI, 오디오 매니저, 서리 오라 셰이더 |
-| **Rhythm Game (2025)** | 리듬게임 · 온라인 대전 | Photon PUN 대전, PlayFab 로그인·리더보드, 채보 에디터 · G-STAR 2025 전시 |
+| **Rhythm Game (2025)** | 리듬게임 · 온라인 대전 | Photon PUN 대전, PlayFab 로그인·리더보드, 채보 에디터 |
 
 ---
 
@@ -86,7 +88,7 @@ AI로 만든 게임·웹이 왜 "AI 슬롭"처럼 느껴지는지 근거와 수�
 | **하네스 개선** | 고정 멀티에이전트 구조를 운영해 한계를 확인하고, 위험도 기반 동적 오케스트레이션으로 교체 |
 
 ```
-2025      에이전트 없이 게임 개발 기본기 — 리듬게임 G-STAR 전시
+2025      에이전트 없이 게임 개발 기본기
 2026.04   규칙 파일과 Unity MCP를 보조 도구로 활용
 2026.08   고정 역할(계획 → 구현 → 리뷰)과 작업 원장
 2026.09   계약·테스트 우선 개발, 고정 MAS 폐기
@@ -100,11 +102,7 @@ AI로 만든 게임·웹이 왜 "AI 슬롭"처럼 느껴지는지 근거와 수�
 
 | 시기 | |
 |---|---|
-| 2026.11 | Official 2026 Unity Game Jam — *Floor F* |
-| 2026.07 | 고등학교 프로그래밍 보조 강사 |
 | 2025.12 | 전주시 청소년 IP 해커톤 — **금상** (시각장애인용 AI 비전 보조 장치) |
-| 2025.11 | G-STAR 2025 — 리듬게임 전시 |
-| 2025.10 | 남원 드론 페스티벌 — 리듬게임 전시 |
-| 2025.06 | 프로그래밍기능사 |
+| 2025.06 | 정보처리기능사 |
 | 2025.04 – | 교내 게임 개발 동아리 공동 설립 · 회장, C#·Unity 교육 |
 | 2024.04 | 지방기능경기대회 — **은메달** |

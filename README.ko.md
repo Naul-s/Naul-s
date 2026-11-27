@@ -48,7 +48,7 @@ AI 에이전트 팀으로 Unity 게임을 만듭니다. 명세·역할·검증 �
 
 - 시야·청각·흔적 추적을 갖춘 K-9 적 AI와 네트워크 동기화
 - 튜토리얼 시스템, 1인칭 상호작용, 전체 코드 리뷰 및 리팩토링
-- **AI:** 고정 4역할 구조에서 위험도 라우팅을 갖춘 7역할 동적 오케스트레이션으로 하네스 재설계 · PR 6건 병합
+- **AI:** 고정 4역할 구조에서 위험도 라우팅을 갖춘 7역할 동적 오케스트레이션으로 하네스 재설계 · PR 11건 병합
 
 <details>
 <summary>스크린샷</summary>
@@ -58,13 +58,13 @@ AI 에이전트 팀으로 Unity 게임을 만듭니다. 명세·역할·검증 �
 
 ### Project SR
 
-<sub>1인 · 개발 중 · Unity 6 · FMOD · Windows API · Private</sub>
+<sub>1인 · 개발 중 · Unity 6 · FMOD · Private</sub>
 
 기어 전환을 조합한 3D 4레인 리듬게임과 채보 에디터. Steam 출시 목표.
 
 <img src="assets/project-sr/gear.jpg" alt="Project SR" width="100%">
 
-- FMOD와 Windows API 기반 저지연 오디오, DSP 스케줄 재생, 음원 offset 자동 보정
+- FMOD 기반 저지연 오디오와 WASAPI 출력 확인, DSP 스케줄 재생, 음원 offset 자동 보정
 - 엔진·FMOD 비의존 판정 코어, WAV · OGG · MP3 자동 인식
 - **AI:** 판정 계약 · JSON Schema · golden vector를 구현 전에 고정 · 테스트 케이스 589개
 
@@ -78,7 +78,7 @@ AI 에이전트 팀으로 Unity 게임을 만듭니다. 명세·역할·검증 �
 
 | 프로젝트 | 설명 |
 |---|---|
-| **SHELTER**<br><sub>3인 팀 · VR · Private</sub> | Meta Quest용 VR 좀비 서바이벌. 적 AI, 풀링 기반 스폰, ScriptableObject 데이터, Quest 최적화(LOD, 라이트맵, 포비에이티드 렌더링).<details><summary>스크린샷</summary><img src="assets/shelter/1.jpg" width="300"> <img src="assets/shelter/2.jpg" width="300"></details> |
+| **[SHELTER](https://github.com/Naul-s/SHELTER)**<br><sub>3인 팀 · VR</sub> | Meta Quest용 VR 좀비 서바이벌. 적 AI, 풀링 기반 스폰, ScriptableObject 데이터, Quest 최적화(LOD, 라이트맵, 포비에이티드 렌더링).<details><summary>스크린샷</summary><img src="assets/shelter/1.jpg" width="300"> <img src="assets/shelter/2.jpg" width="300"></details> |
 | **Trincle**<br><sub>6인 팀 · Unity</sub> | 탑다운 픽셀 액션. 셰이더 기반 무기 스킬, 타격 VFX, 펄린 노이즈 맵 생성, ScriptableObject 아이템 드랍·대화창, 인벤토리·제작 UI.<details><summary>스크린샷</summary><img src="assets/trincle/shader.png" width="300"> <img src="assets/trincle/drop.png" width="300"> <img src="assets/trincle/ui-1.jpg" width="300"> <img src="assets/trincle/dialog.png" width="300"></details> |
 | **Music of the Soul**<br><sub>1인 · Unity · 2025</sub> | 온라인 대전 리듬게임. PlayFab 로그인·데이터 동기화, Photon 멀티플레이, 오브젝트 풀링과 Profiler 기반 최적화.<details><summary>스크린샷</summary><img src="assets/music-of-the-soul/title.jpg" width="300"> <img src="assets/music-of-the-soul/play.jpg" width="300"></details> |
 | **Snow Removal Master**<br><sub>1인 · Web</sub> | React · Three.js 로우폴리 3D 한붓그리기 퍼즐. 절차 생성 Endless 모드와 스테이지 에디터. [▶ 플레이](https://snow-removal-master.vercel.app) |

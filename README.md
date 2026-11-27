@@ -48,7 +48,7 @@ Elevator puzzle sim where every guest has a lucky and an unlucky number.
 
 - K-9 enemy AI with sight, hearing, and trace tracking, synced over the network
 - Tutorial system, first-person interaction, codebase-wide review and refactor
-- **AI:** Harness redesigned from 4 fixed roles to 7-role dynamic orchestration with risk-based routing · 6 PRs merged
+- **AI:** Harness redesigned from 4 fixed roles to 7-role dynamic orchestration with risk-based routing · 11 PRs merged
 
 <details>
 <summary>Screenshots</summary>
@@ -58,13 +58,13 @@ Elevator puzzle sim where every guest has a lucky and an unlucky number.
 
 ### Project SR
 
-<sub>Solo · In development · Unity 6 · FMOD · Windows API · Private</sub>
+<sub>Solo · In development · Unity 6 · FMOD · Private</sub>
 
 3D four-lane rhythm game with gear shifts and a chart editor. Targeting Steam.
 
 <img src="assets/project-sr/gear.jpg" alt="Project SR" width="100%">
 
-- Low-latency audio with FMOD and Windows API, DSP-scheduled playback, automatic offset calibration
+- Low-latency FMOD audio with WASAPI output checks, DSP-scheduled playback, automatic offset calibration
 - Judgment core independent of the engine and FMOD; auto-detects WAV, OGG, MP3
 - **AI:** Judgment contract, JSON Schema, and golden vectors fixed before implementation · 589 test cases
 
@@ -78,7 +78,7 @@ Elevator puzzle sim where every guest has a lucky and an unlucky number.
 
 | Project | Description |
 |---|---|
-| **SHELTER**<br><sub>Team of 3 · VR · Private</sub> | VR zombie survival for Meta Quest. Enemy AI, pooled spawning, ScriptableObject data, Quest optimization (LOD, lightmaps, foveated rendering).<details><summary>Screenshots</summary><img src="assets/shelter/1.jpg" width="300"> <img src="assets/shelter/2.jpg" width="300"></details> |
+| **[SHELTER](https://github.com/Naul-s/SHELTER)**<br><sub>Team of 3 · VR</sub> | VR zombie survival for Meta Quest. Enemy AI, pooled spawning, ScriptableObject data, Quest optimization (LOD, lightmaps, foveated rendering).<details><summary>Screenshots</summary><img src="assets/shelter/1.jpg" width="300"> <img src="assets/shelter/2.jpg" width="300"></details> |
 | **Trincle**<br><sub>Team of 6 · Unity</sub> | Top-down pixel action. Shader-based weapon skills, hit VFX, Perlin-noise map generation, ScriptableObject item drops and dialogue, inventory and crafting UI.<details><summary>Screenshots</summary><img src="assets/trincle/shader.png" width="300"> <img src="assets/trincle/drop.png" width="300"> <img src="assets/trincle/ui-1.jpg" width="300"> <img src="assets/trincle/dialog.png" width="300"></details> |
 | **Music of the Soul**<br><sub>Solo · Unity · 2025</sub> | Rhythm game with online versus. PlayFab login and data sync, Photon multiplayer, object pooling and Profiler-driven optimization.<details><summary>Screenshots</summary><img src="assets/music-of-the-soul/title.jpg" width="300"> <img src="assets/music-of-the-soul/play.jpg" width="300"></details> |
 | **Snow Removal Master**<br><sub>Solo · Web</sub> | Low-poly 3D one-stroke puzzle in React and Three.js with a procedural Endless mode and stage editor. [▶ Play](https://snow-removal-master.vercel.app) |
